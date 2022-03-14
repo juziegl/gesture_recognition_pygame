@@ -1,4 +1,4 @@
-# gesture_recognition_pygame
+# gesture recognition pygame
 I created a little pygame which you can play with your webcam and gesture recognition. The goal is to the dodge the falling rocks. You get more points dependent on the time till you collidate with a rock.  After that you can restart the game or quit it. The gesture reconition runs with the mediapipe libary. I hope you enjoy it. :)
 
 <div>
