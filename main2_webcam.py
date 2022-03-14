@@ -66,20 +66,7 @@ def resetPlayground(randomX, randomY):
     pygame.draw.rect(SCREEN, BLACK, pygame.Rect( (randomX*32)+1, ((randomY+1)*32)+1, 30, 30))
     pygame.draw.rect(SCREEN, BLACK, pygame.Rect(( (randomX+1)*32)+1, ((randomY+1)*32)+1, 30, 30))
 
-def DeclareLedsPosition(XPoseCoo, YPoseCoo):
-    '''switch led on based on triggered coordinates'''
-    for x in range(0, 640, 20):
-        for y in range(0, 480, 15):
-
-            Xabs = abs(x-XPoseCoo)
-            Yabs = abs(y-YPoseCoo)
-
-            if Xabs <= 20 & Yabs <=15:
-                xled = int(x/32)
-                yled = int(y/32)
-                return xled, yled
-
-
+    
 if __name__ == "__main__":
 
     initialize()
